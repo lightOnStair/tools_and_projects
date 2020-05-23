@@ -1,17 +1,13 @@
 # Jiangxiao Xie xiexx647
 
-# I understand this is a graded, individual examination that may not be
-# discussed with anyone. I also understand that obtaining solutions or
-# partial solutions from outside sources, or discussing
-# any aspect of the examination with anyone will result in failing the course.
-# I further certify that this program represents my own work. None of it was
-# obtained from any source other than material presented as part of the
-# course
+#Chess game othello
 import turtle
 import math
 import random
 turtle.delay(0)
 turtle.setworldcoordinates(-100,800,800,-100)
+
+#initialize the board
 def initialBoardGraph():
     '''creat an enmpty board graph'''
     turtle.setworldcoordinates(-100,800,800,-100)
@@ -45,7 +41,6 @@ def initialBoardGraph():
     for i in range(8):
         turtle.setpos(i*100,-40)
         turtle.write(i,font = ("Arial", 50, "normal"))
-
 
 def surrondCells(row,col):
     '''find all adjacent cells of a specific cell'''
